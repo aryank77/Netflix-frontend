@@ -1,0 +1,253 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 68px;
+    padding: 0 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: linear-gradient(
+        to bottom,
+        rgba(0,0,0,.95),
+        rgba(0,0,0,.4),
+        transparent
+    );
+
+    z-index: 999;
+    box-sizing: border-box;
+
+    /* Animation */
+    transition: transform .35s ease-in-out, background .35s ease;
+    will-change: transform;
+}
+
+/* Navbar Visible */
+.navbar.show{
+    transform: translateY(0);
+}
+
+/* Navbar Hidden */
+.navbar.hide{
+    transform: translateY(-100%);
+}
+
+/* Left */
+.navbar-left{
+    display:flex;
+    align-items:center;
+    gap:40px;
+}
+
+.logo{
+    color:#E50914;
+    font-size:2rem;
+    font-weight:800;
+    letter-spacing:1px;
+}
+
+.nav-links{
+    display:flex;
+    gap:22px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:white;
+    font-size:15px;
+    font-weight:500;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#b3b3b3;
+}
+
+/* Right */
+.navbar-right{
+    display:flex;
+    align-items:center;
+    gap:25px;
+}
+
+.nav-icon{
+    color:white;
+    font-size:20px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.nav-icon:hover{
+    color:#b3b3b3;
+}
+
+/* Shared reset for icon buttons (search + notification bell) so they
+   behave like the original plain icons but stay keyboard-accessible. */
+.nav-icon-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.nav-icon-btn:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 3px;
+    border-radius: 4px;
+}
+
+/* Profile */
+.profile{
+    position:relative;
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+.profile-trigger{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    cursor:pointer;
+}
+
+.profile-trigger:focus-visible{
+    outline: 2px solid #fff;
+    outline-offset: 4px;
+    border-radius: 6px;
+}
+
+.profile-img{
+    width:35px;
+    height:35px;
+    border-radius:4px;
+    object-fit:cover;
+}
+
+.profile-name{
+    color:#fff;
+    font-size:15px;
+    font-weight:600;
+}
+
+.arrow{
+    color:white;
+    font-size:16px;
+}
+
+/* Dropdown */
+.profile-menu{
+    position:absolute;
+    top:52px;
+    right:0;
+    width:260px;
+    background:#181818;
+    border-radius:8px;
+    padding:15px;
+    box-shadow:0 8px 25px rgba(0,0,0,.6);
+    z-index:1000;
+}
+
+.menu-user{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin-bottom:15px;
+}
+
+.menu-avatar{
+    width:45px;
+    height:45px;
+    border-radius:6px;
+}
+
+.menu-info h4{
+    margin:0;
+    color:white;
+    font-size:16px;
+}
+
+.profile-email{
+    margin-top:5px;
+    color:#b3b3b3;
+    font-size:13px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+.menu-links{
+    list-style:none;
+    margin:0 0 12px;
+    padding:0;
+    border-top:1px solid #2a2a2a;
+    border-bottom:1px solid #2a2a2a;
+}
+
+.menu-links li a{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding:10px 4px;
+    color:#e5e5e5;
+    text-decoration:none;
+    font-size:14px;
+    transition:color .2s ease;
+}
+
+.menu-links li a:hover,
+.menu-links li a:focus-visible{
+    color:#fff;
+    outline:none;
+}
+
+.menu-link-icon{
+    display:flex;
+    align-items:center;
+    color:#b3b3b3;
+    font-size:14px;
+}
+
+.logout-btn{
+    width:100%;
+    padding:10px;
+    background:#E50914;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    font-weight:600;
+    transition:.3s;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.logout-btn:hover{
+    background:#b20710;
+}
+
+/* Responsive */
+@media (max-width:900px){
+
+    .navbar{
+        padding:0 20px;
+    }
+
+    .nav-links{
+        display:none;
+    }
+
+    .profile-name{
+        display:none;
+    }
+
+    .arrow{
+        display:none;
+    }
+}

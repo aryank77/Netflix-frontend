@@ -1,0 +1,48 @@
+.movie-row {
+    padding: 25px 40px;
+}
+
+.movie-row h2 {
+    color: white;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.movies {
+    display: flex;
+    gap: 15px;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    scroll-behavior: smooth;
+
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+    overscroll-behavior-x: contain;
+}
+
+.movies::-webkit-scrollbar {
+    display: none;
+}
+
+.movie-row-error {
+    color: #888;
+    font-size: 14px;
+    padding: 20px 0;
+}
+
+@media (max-width: 768px) {
+    .movie-row {
+        padding: 20px;
+    }
+
+    .movie-row h2 {
+        font-size: 1.2rem;
+    }
+
+    .movies {
+        gap: 10px;
+    }
+}

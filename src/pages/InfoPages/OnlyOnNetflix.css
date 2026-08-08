@@ -1,0 +1,11 @@
+.only-on-netflix .oon-hero {
+  padding: 50px 40px 10px;
+}
+
+.only-on-netflix .oon-hero .info-title {
+  margin-bottom: 6px;
+}
+
+.oon-rows {
+  padding: 20px 0 60px;
+}

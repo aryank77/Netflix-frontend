@@ -1,0 +1,82 @@
+.settings-page {
+  min-height: 100vh;
+  background: #000;
+  color: #fff;
+  padding: 120px 60px 60px;
+  max-width: 700px;
+}
+
+.settings-page h1 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.settings-list {
+  border-top: 1px solid #2a2a2a;
+}
+
+.settings-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding: 22px 0;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+.settings-item h3 {
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+
+.settings-item p {
+  color: #888;
+  font-size: 13px;
+}
+
+.settings-toggle {
+  flex-shrink: 0;
+  width: 50px;
+  height: 28px;
+  border-radius: 14px;
+  border: none;
+  background: #4d4d4d;
+  position: relative;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.settings-toggle.on {
+  background: #e50914;
+}
+
+.settings-toggle-knob {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 22px;
+  height: 22px;
+  background: #fff;
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+}
+
+.settings-toggle.on .settings-toggle-knob {
+  transform: translateX(22px);
+}
+
+.settings-language-hint {
+  color: #888;
+  font-size: 13px;
+  margin-top: 30px;
+}
+
+.settings-language-hint a {
+  color: #e50914;
+}
+
+@media (max-width: 768px) {
+  .settings-page {
+    padding: 100px 20px 40px;
+  }
+}

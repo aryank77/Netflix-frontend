@@ -1,0 +1,35 @@
+.poster-skeleton {
+  min-width: 180px;
+  width: 180px;
+  height: 270px;
+  border-radius: 8px;
+  flex-shrink: 0;
+  background: linear-gradient(90deg, #1a1a1a 25%, #262626 37%, #1a1a1a 63%);
+  background-size: 400% 100%;
+  animation: skeleton-shimmer 1.4s ease infinite;
+}
+
+@keyframes skeleton-shimmer {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .poster-skeleton {
+    min-width: 140px;
+    width: 140px;
+    height: 210px;
+  }
+}
+
+@media (max-width: 480px) {
+  .poster-skeleton {
+    min-width: 120px;
+    width: 120px;
+    height: 180px;
+  }
+}

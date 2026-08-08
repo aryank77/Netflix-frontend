@@ -1,0 +1,103 @@
+.info-page {
+  min-height: 100vh;
+  background: #000;
+  color: #e5e5e5;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+.info-page-header {
+  background: #141414;
+  border-bottom: 1px solid #2a2a2a;
+  padding: 18px 0;
+}
+
+.info-page-header-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.info-logo {
+  color: #e50914;
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.info-logo:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 4px;
+}
+
+.info-page-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 40px 100px;
+}
+
+.info-title {
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.info-subtitle {
+  color: #888;
+  font-size: 15px;
+  margin-bottom: 40px;
+}
+
+.info-section {
+  margin-bottom: 34px;
+}
+
+.info-heading {
+  font-size: 19px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.info-paragraph {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #b3b3b3;
+  margin-bottom: 10px;
+}
+
+.info-list {
+  padding-left: 20px;
+  color: #b3b3b3;
+}
+
+.info-list li {
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.info-back-link {
+  display: inline-block;
+  margin-top: 20px;
+  color: #e50914;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.info-back-link:hover,
+.info-back-link:focus-visible {
+  text-decoration: underline;
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  .info-page-container {
+    padding: 40px 20px 80px;
+  }
+
+  .info-title {
+    font-size: 26px;
+  }
+}

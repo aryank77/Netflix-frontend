@@ -1,0 +1,42 @@
+.my-list-page{
+    min-height:100vh;
+    background:#141414;
+    color:white;
+    padding:110px 50px 60px;
+}
+
+.my-list-page h1{
+    font-size:42px;
+    margin-bottom:35px;
+}
+
+.my-list-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+    gap:25px;
+}
+
+.my-list-card{
+    cursor:pointer;
+    transition:.3s;
+}
+
+.my-list-card:hover{
+    transform:scale(1.06);
+}
+
+.my-list-card img{
+    width:100%;
+    border-radius:8px;
+    object-fit:cover;
+}
+
+.my-list-card h3{
+    margin-top:10px;
+    font-size:18px;
+}
+
+.my-list-card span{
+    color:#ccc;
+    font-size:15px;
+}

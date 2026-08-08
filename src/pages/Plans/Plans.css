@@ -1,0 +1,146 @@
+.plans-container {
+  max-width: 1000px;
+}
+
+.plans-current-note {
+  color: #b3b3b3;
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+.plans-current-note strong {
+  color: #fff;
+}
+
+.plans-table-wrap {
+  overflow-x: auto;
+  border-radius: 6px;
+  border: 1px solid #2a2a2a;
+  margin-bottom: 24px;
+}
+
+.plans-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 640px;
+  background: #141414;
+}
+
+.plans-table th,
+.plans-table td {
+  padding: 14px 16px;
+  text-align: center;
+  border-bottom: 1px solid #2a2a2a;
+  color: #d9d9d9;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.plans-row-label {
+  text-align: left !important;
+  color: #b3b3b3;
+  font-weight: 500;
+  white-space: nowrap;
+  min-width: 200px;
+}
+
+.plans-table thead th {
+  padding-top: 22px;
+  padding-bottom: 6px;
+  vertical-align: bottom;
+}
+
+.plans-recommended-tag {
+  display: block;
+  color: #46d369;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  margin-bottom: 6px;
+}
+
+.plans-name {
+  display: block;
+  color: #fff;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.plans-price-row td {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.plans-price {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.plans-price-suffix {
+  color: #888;
+  font-size: 12.5px;
+  margin-left: 3px;
+}
+
+.plans-cta-row td {
+  padding-top: 4px;
+  padding-bottom: 22px;
+}
+
+.plans-cta-btn {
+  width: 100%;
+  max-width: 160px;
+  background: #e50914;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 8px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.plans-cta-btn:hover,
+.plans-cta-btn:focus-visible {
+  background: #c40812;
+  outline: none;
+}
+
+.plans-cta-btn.current {
+  background: transparent;
+  border: 1px solid #555;
+  color: #b3b3b3;
+  cursor: default;
+}
+
+.plans-cta-btn.current:hover {
+  background: transparent;
+}
+
+.plans-check {
+  color: #46d369;
+  font-size: 17px;
+}
+
+.plans-dash {
+  color: #555;
+}
+
+.plans-footnote {
+  color: #737373;
+  font-size: 12.5px;
+  line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+  .plans-name {
+    font-size: 16px;
+  }
+
+  .plans-price {
+    font-size: 16px;
+  }
+}

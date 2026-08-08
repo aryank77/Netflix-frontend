@@ -1,0 +1,179 @@
+.nf-page {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background: #000;
+}
+
+/* ---------- Hero ---------- */
+.nf-hero {
+  background: linear-gradient(120deg, #e50914 0%, #b0060f 100%);
+  padding: 90px 80px;
+  color: #fff;
+}
+
+.nf-hero-content {
+  max-width: 620px;
+}
+
+.nf-hero-title {
+  font-size: 46px;
+  line-height: 1.2;
+  font-weight: 800;
+  margin: 0 0 40px 0;
+}
+
+.nf-signup {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.nf-email-wrapper {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 4px;
+  padding: 0 16px;
+  flex: 1 1 320px;
+  min-width: 260px;
+}
+
+.nf-email-icon {
+  color: #fff;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.nf-email-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 18px 0;
+}
+
+.nf-email-input::placeholder {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.nf-cta-btn {
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0 32px;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.nf-cta-btn:hover {
+  background: #1a1a1a;
+}
+
+/* ---------- Footer ---------- */
+.nf-footer {
+  background: #000;
+  color: #808080;
+  padding: 60px 80px 40px;
+}
+
+.nf-footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.nf-footer-brand {
+  flex: 1 1 220px;
+}
+
+.nf-logo {
+  color: #e50914;
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.nf-location {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 14px;
+  font-size: 14px;
+  color: #a3a3a3;
+}
+
+.nf-footer-col {
+  flex: 1 1 160px;
+}
+
+.nf-footer-heading {
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #737373;
+  margin-bottom: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.nf-footer-col ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nf-footer-col li {
+  margin-bottom: 12px;
+}
+
+.nf-footer-col a {
+  color: #b3b3b3;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+.nf-footer-col a:hover {
+  color: #fff;
+}
+
+.nf-language-select {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #4d4d4d;
+  border-radius: 4px;
+  padding: 8px 14px;
+}
+
+.nf-language-select select {
+  background: transparent;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .nf-hero {
+    padding: 60px 24px;
+  }
+
+  .nf-hero-title {
+    font-size: 30px;
+  }
+
+  .nf-footer {
+    padding: 40px 24px;
+  }
+
+  .nf-footer-top {
+    flex-direction: column;
+  }
+}

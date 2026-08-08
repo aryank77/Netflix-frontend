@@ -1,0 +1,108 @@
+.movie-card {
+    position: relative;
+    min-width: 180px;
+    width: 180px;
+    height: 270px;
+    flex-shrink: 0;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.movie-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.movie-card:hover {
+    transform: scale(1.08);
+    z-index: 5;
+}
+
+/* Dark Overlay */
+.movie-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.movie-card:hover::after {
+    opacity: 1;
+}
+
+/* Play Button */
+.play-btn {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    width: 42px;
+    height: 42px;
+    border: none;
+    border-radius: 50%;
+    background: #e50914;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    opacity: 1;
+    visibility: visible;
+    transform: scale(0.8);
+
+    transition: all 0.3s ease;
+    z-index: 2;
+}
+
+.movie-card:hover .play-btn {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+
+.play-btn:hover {
+    background: #f40612;
+    transform: scale(1.1);
+}
+
+.play-btn svg {
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .movie-card {
+        min-width: 140px;
+        width: 140px;
+        height: 210px;
+    }
+
+    .play-btn {
+        width: 36px;
+        height: 36px;
+        bottom: 8px;
+        right: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .movie-card {
+        min-width: 120px;
+        width: 120px;
+        height: 180px;
+    }
+
+    .play-btn {
+        width: 32px;
+        height: 32px;
+        bottom: 6px;
+        right: 6px;
+    }
+}

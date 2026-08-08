@@ -1,0 +1,45 @@
+.trailer-overlay{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.9);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+}
+
+.trailer-modal{
+    position:relative;
+    width:90%;
+    max-width:1000px;
+}
+
+.trailer-modal iframe{
+    width:100%;
+    height:500px;
+    border:none;
+    border-radius:12px;
+    background:#000;
+}
+
+.close-btn{
+    position:absolute;
+    top:-45px;
+    right:0;
+    width:40px;
+    height:40px;
+    border:none;
+    border-radius:50%;
+    background:#fff;
+    color:#000;
+    font-size:22px;
+    cursor:pointer;
+}
+
+.close-btn:hover{
+    background:#e50914;
+    color:#fff;
+}
